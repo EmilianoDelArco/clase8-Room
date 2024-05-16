@@ -37,8 +37,8 @@ fun HomeScreen(
             Button(onClick = { onNextButtonClicked() }) {
                 Text("Ir a la lista de tareas")
             }
-            Button(onClick = { navController.navigate("weather - Clima") }) {
-                Text("Ir al clima")
+            Button(onClick = { navController.navigate("Juegos") }) {
+                Text("Ir a Juegos")
             }
         }
     }

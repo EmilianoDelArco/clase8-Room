@@ -20,9 +20,9 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.aprendeprogramando.ui.theme.AprendeProgramandoTheme
+import com.example.aprendeprogramando.vistas.ApiGames
 import com.example.aprendeprogramando.vistas.HomeScreen
 import com.example.aprendeprogramando.vistas.TaskListScreen
-import com.example.aprendeprogramando.vistas.WeatherScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -103,8 +103,8 @@ fun AprendeProgramandoApp(
             composable("Lista de Tareas") {
                 TaskListScreen()
             }
-            composable("weather - Clima") {
-                WeatherScreen()
+            composable("Juegos") {
+                ApiGames()
             }
         }
     }
